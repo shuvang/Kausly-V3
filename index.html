@@ -3,29 +3,30 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kausly — Every IT problem, handled.</title>
-  <meta name="description" content="Kausly is the outsourced IT department for small and medium businesses in Dubai. Procurement, maintenance, management, consulting and 24/7 monitoring — from $1,000/month." />
+  <title>Kausly — Every IT problem made painless</title>
+  <meta name="description" content="Kausly is the outsourced IT department for small and medium businesses in Dubai. Procurement, maintenance, management and consulting — from $1,000/month." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='16' fill='%23111016'/><circle cx='16' cy='22' r='5' fill='%23E5006D'/></svg>" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='16' fill='%233E13C4'/><circle cx='16' cy='22' r='5' fill='%23F25AF8'/></svg>" />
 </head>
 <body>
 
   <!-- ============ NAV ============ -->
   <header class="nav" id="nav">
     <div class="container nav__inner">
-      <a href="#top" class="logo" aria-label="Kausly home">kausly<span class="logo__dot">.</span></a>
+      <a href="index.html" class="logo" aria-label="Kausly home">kausly<span class="logo__dot">.</span></a>
       <nav class="nav__links" id="navLinks" aria-label="Primary">
-        <a href="#what-we-do">What we do</a>
-        <a href="#how-we-work">How we work</a>
-        <a href="#why-kausly">Why Kausly</a>
-        <a href="#pricing">Pricing</a>
-        <a href="#faq">FAQ</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="referral.html">Referral</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="rfq.html">RFQ</a>
+        <a href="partner.html" class="mobile-only">Partner with us</a>
       </nav>
       <div class="nav__actions">
-        <a href="#contact" class="btn btn--pink btn--sm"><span>Talk to us</span></a>
+        <a href="partner.html" class="btn btn--primary btn--sm"><span>Partner with us</span></a>
         <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
           <span></span><span></span>
         </button>
@@ -35,33 +36,33 @@
 
   <main id="top">
 
-    <!-- ============ HERO ============ -->
+    <!-- ============ HERO (centered, liquid gradient) ============ -->
     <section class="hero">
-      <div class="hero__dots" aria-hidden="true"></div>
-      <div class="container">
+      <div class="liquid" aria-hidden="true">
+        <span class="liquid__blob liquid__blob--1"></span>
+        <span class="liquid__blob liquid__blob--2"></span>
+        <span class="liquid__blob liquid__blob--3"></span>
+        <span class="liquid__blob liquid__blob--4"></span>
+      </div>
+      <div class="container hero__content">
+        <p class="hero__eyebrow reveal-up" style="--d:0"><span class="dot" aria-hidden="true"></span>Your outsourced IT department · Dubai, UAE</p>
         <h1 class="hero__title">
-          <span class="line-mask"><span class="line reveal-line" style="--d:0">We look after your</span></span>
-          <span class="line-mask"><span class="line reveal-line" style="--d:1"><span class="rotator" id="rotator" aria-label="IT services"><span class="rotator__word is-active">procurement.</span><span class="rotator__word">maintenance.</span><span class="rotator__word">monitoring.</span><span class="rotator__word">consulting.</span><span class="rotator__word">everything.</span></span></span></span>
+          <span class="line-mask"><span class="line reveal-line" style="--d:1">Every IT problem</span></span>
+          <span class="line-mask"><span class="line reveal-line" style="--d:2">made <span class="rotator" id="rotator" aria-label="painless"><span class="rotator__word is-active">painless.</span><span class="rotator__word">predictable.</span><span class="rotator__word">invisible.</span><span class="rotator__word">handled.</span></span></span></span>
         </h1>
-        <div class="hero__row reveal-up" style="--d:3">
-          <p class="hero__sub">
-            Kausly is the outsourced IT department for small and medium
-            businesses in Dubai. Proactive support, reliable infrastructure
-            and expert consulting — for one flat monthly price.
-          </p>
-          <div class="hero__cta">
-            <a href="#contact" class="btn btn--pink">
-              <span>Book a consultation</span>
-              <svg class="btn__arrow" width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </a>
-            <a href="#what-we-do" class="btn btn--ghost"><span>See what we do</span></a>
-          </div>
+        <p class="hero__sub reveal-up" style="--d:3">
+          Technology is great when it works. We make sure it does — procurement,
+          maintenance, management and consulting for one flat monthly price.
+        </p>
+        <div class="hero__cta reveal-up" style="--d:4">
+          <a href="partner.html" class="btn btn--primary btn--lg"><span>Partner With Us</span></a>
+          <a href="services.html" class="btn btn--outline btn--lg"><span>Explore services</span></a>
         </div>
       </div>
-      <div class="hero__ticker reveal-up" style="--d:4" aria-hidden="true">
+      <div class="hero__ticker reveal-up" style="--d:5" aria-hidden="true">
         <div class="ticker__track">
-          <span>IT procurement</span><i></i><span>IT maintenance</span><i></i><span>IT management</span><i></i><span>IT consulting</span><i></i><span>Managed monitoring</span><i></i><span>From $1,000/month</span><i></i>
-          <span>IT procurement</span><i></i><span>IT maintenance</span><i></i><span>IT management</span><i></i><span>IT consulting</span><i></i><span>Managed monitoring</span><i></i><span>From $1,000/month</span><i></i>
+          <span>IT procurement</span><i></i><span>IT maintenance</span><i></i><span>IT management</span><i></i><span>IT consulting</span><i></i><span>24/7 monitoring included</span><i></i><span>From $1,000/month</span><i></i>
+          <span>IT procurement</span><i></i><span>IT maintenance</span><i></i><span>IT management</span><i></i><span>IT consulting</span><i></i><span>24/7 monitoring included</span><i></i><span>From $1,000/month</span><i></i>
         </div>
       </div>
     </section>
@@ -70,84 +71,140 @@
     <section class="statement">
       <div class="container">
         <p class="statement__text" id="statement">
-          Small businesses deserve enterprise-grade IT. We deliver it — the
-          people, the tools and the discipline of a full IT department,
-          without the headcount.
+          We support the complete lifecycle of your business technology.
+          Buying it, running it, fixing it, planning it — helping you get
+          back to the work that matters.
         </p>
       </div>
     </section>
 
-    <!-- ============ WHAT WE DO ============ -->
-    <section class="section" id="what-we-do">
-      <div class="container">
-        <div class="section__head" data-reveal>
-          <div>
-            <p class="eyebrow" style="--i:0">What we do<span class="pink">.</span></p>
-            <h2 class="h2" style="--i:1">One partner.<br />Every IT job covered.</h2>
+    <!-- ============ SERVICES — pinned scroll showcase ============ -->
+    <section class="show" id="services">
+      <div class="show__pin">
+        <div class="show__glow" aria-hidden="true"></div>
+        <div class="show__ring" aria-hidden="true"></div>
+
+        <div class="show__scenes">
+          <!-- Scene 1 · Procurement -->
+          <div class="show__scene is-active" data-scene="0">
+            <div class="show__art">
+              <div class="art__card">
+                <span class="art__circle" aria-hidden="true"></span>
+                <svg class="art__icon" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+                  <path d="M8 14h32l-3 20a4 4 0 01-4 3.4H15a4 4 0 01-4-3.4L8 14z" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round"/>
+                  <path d="M17 14a7 7 0 0114 0" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>
+                  <path d="M18 24l4 4 8-8" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="art__mini art__mini--tl">
+                <strong>Quote approved!</strong>
+                <span>3 vendors compared — 18% under budget</span>
+              </div>
+              <div class="art__mini art__mini--br">
+                <strong>Laptops delivered</strong>
+                <span>Set up and ready on desks by Monday</span>
+              </div>
+              <span class="art__badge" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M4 7h13l3 5v5h-2M4 7v10h2m8 0H9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="8" cy="18" r="1.8" stroke="currentColor" stroke-width="1.8"/><circle cx="16" cy="18" r="1.8" stroke="currentColor" stroke-width="1.8"/></svg>
+              </span>
+            </div>
+            <div class="show__info">
+              <span class="show__pill">IT Procurement</span>
+              <p class="show__lede">The right hardware and software at the right price — sourced, negotiated and deployed without the vendor games.</p>
+              <a href="service-procurement.html" class="btn btn--outline"><span>Explore Procurement</span></a>
+            </div>
           </div>
-          <div class="carousel__nav" style="--i:2">
-            <button class="carousel__btn" id="prevBtn" aria-label="Previous services">
-              <svg width="18" height="18" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13 8H3M7 4L3 8l4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </button>
-            <button class="carousel__btn" id="nextBtn" aria-label="Next services">
-              <svg width="18" height="18" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </button>
+
+          <!-- Scene 2 · Maintenance -->
+          <div class="show__scene" data-scene="1">
+            <div class="show__art">
+              <div class="art__card">
+                <span class="art__circle" aria-hidden="true"></span>
+                <svg class="art__icon" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+                  <path d="M29 10a9 9 0 00-11.6 11L9 29.4a4.2 4.2 0 006 6l8.3-8.4A9 9 0 0038 15.6l-6 6-5.6-1.4L25 14.6l6-6c-.6-.3-1.3-.5-2-.6z" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="art__mini art__mini--tl">
+                <strong>Patch deployed</strong>
+                <span>42 devices updated overnight — zero downtime</span>
+              </div>
+              <div class="art__mini art__mini--br">
+                <strong>Ticket resolved</strong>
+                <span>Printer back online in 11 minutes</span>
+              </div>
+              <span class="art__badge" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M12 3l7 3v5c0 4.5-3 8.5-7 10-4-1.5-7-5.5-7-10V6l7-3z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </div>
+            <div class="show__info">
+              <span class="show__pill">IT Maintenance</span>
+              <p class="show__lede">Systems that stay healthy, patched and secure — most issues are fixed before your team ever notices them.</p>
+              <a href="service-maintenance.html" class="btn btn--outline"><span>Explore Maintenance</span></a>
+            </div>
+          </div>
+
+          <!-- Scene 3 · Management -->
+          <div class="show__scene" data-scene="2">
+            <div class="show__art">
+              <div class="art__card">
+                <span class="art__circle" aria-hidden="true"></span>
+                <svg class="art__icon" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+                  <rect x="7" y="9" width="34" height="22" rx="3" stroke="currentColor" stroke-width="2.6"/>
+                  <path d="M14 39h20M24 31v8" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>
+                  <path d="M13 24l5-5 4 3 7-7" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="art__mini art__mini--tl">
+                <strong>All systems operational</strong>
+                <span>99.9% uptime — 24/7 monitoring active</span>
+              </div>
+              <div class="art__mini art__mini--br">
+                <strong>New starter ready</strong>
+                <span>Accounts, laptop and access — day one</span>
+              </div>
+              <span class="art__badge" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M3 13h4l2.5-6 4 10 2.5-6H21" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </div>
+            <div class="show__info">
+              <span class="show__pill">IT Management</span>
+              <p class="show__lede">Your entire IT estate run end-to-end — users, devices, networks, cloud and security, watched around the clock.</p>
+              <a href="service-management.html" class="btn btn--outline"><span>Explore Management</span></a>
+            </div>
+          </div>
+
+          <!-- Scene 4 · Consulting -->
+          <div class="show__scene" data-scene="3">
+            <div class="show__art">
+              <div class="art__card">
+                <span class="art__circle" aria-hidden="true"></span>
+                <svg class="art__icon" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+                  <circle cx="24" cy="24" r="17" stroke="currentColor" stroke-width="2.6"/>
+                  <path d="M30 18l-3.4 8.6L18 30l3.4-8.6L30 18z" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="art__mini art__mini--tl">
+                <strong>Roadmap approved</strong>
+                <span>12-month plan, budgeted to the dirham</span>
+              </div>
+              <div class="art__mini art__mini--br">
+                <strong>Migration complete</strong>
+                <span>Moved to the cloud with zero data loss</span>
+              </div>
+              <span class="art__badge" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="12" cy="12" r="3.5" stroke="currentColor" stroke-width="1.8"/></svg>
+              </span>
+            </div>
+            <div class="show__info">
+              <span class="show__pill">IT Consulting</span>
+              <p class="show__lede">Senior technology guidance on demand — roadmaps, budgets, audits and migrations that point tech where the business is going.</p>
+              <a href="service-consulting.html" class="btn btn--outline"><span>Explore Consulting</span></a>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="carousel" id="carousel" data-reveal>
-        <div class="carousel__track container" id="carouselTrack">
-          <article class="scard" style="--i:0">
-            <span class="scard__num">01</span>
-            <div>
-              <h3>IT procurement<span class="pink">.</span></h3>
-              <p>The right hardware and software at the right price. We source, negotiate and deploy — no over-buying, no shelf-ware, no vendor games.</p>
-            </div>
-            <span class="scard__arrow" aria-hidden="true">
-              <svg width="18" height="18" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </span>
-          </article>
-          <article class="scard" style="--i:1">
-            <span class="scard__num">02</span>
-            <div>
-              <h3>IT maintenance<span class="pink">.</span></h3>
-              <p>Systems that stay healthy, patched and secure. Scheduled care and rapid fixes keep your team working instead of waiting.</p>
-            </div>
-            <span class="scard__arrow" aria-hidden="true">
-              <svg width="18" height="18" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </span>
-          </article>
-          <article class="scard" style="--i:2">
-            <span class="scard__num">03</span>
-            <div>
-              <h3>IT management<span class="pink">.</span></h3>
-              <p>Your whole IT estate, run end-to-end — users, devices, networks, cloud and security, governed like an enterprise.</p>
-            </div>
-            <span class="scard__arrow" aria-hidden="true">
-              <svg width="18" height="18" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </span>
-          </article>
-          <article class="scard" style="--i:3">
-            <span class="scard__num">04</span>
-            <div>
-              <h3>IT consulting<span class="pink">.</span></h3>
-              <p>Senior technology guidance on demand — roadmaps, budgets, audits and migrations that point your tech where the business is going.</p>
-            </div>
-            <span class="scard__arrow" aria-hidden="true">
-              <svg width="18" height="18" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </span>
-          </article>
-          <article class="scard" style="--i:4">
-            <span class="scard__num">05</span>
-            <div>
-              <h3>Managed monitoring<span class="pink">.</span></h3>
-              <p>Eyes on your infrastructure 24/7. Most issues are found and fixed before anyone in your office notices.</p>
-            </div>
-            <span class="scard__arrow" aria-hidden="true">
-              <svg width="18" height="18" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </span>
-          </article>
+        <div class="show__progress" aria-hidden="true">
+          <span class="is-on"></span><span></span><span></span><span></span>
         </div>
       </div>
     </section>
@@ -174,12 +231,66 @@
       </div>
     </section>
 
-    <!-- ============ HOW WE WORK ============ -->
-    <section class="section section--tint" id="how-we-work">
+    <!-- ============ SAVINGS CALCULATOR ============ -->
+    <section class="section section--tint" id="calculator">
       <div class="container">
         <div class="section__head" data-reveal>
           <div>
-            <p class="eyebrow" style="--i:0">How we work<span class="pink">.</span></p>
+            <p class="eyebrow" style="--i:0">Savings calculator</p>
+            <h2 class="h2" style="--i:1">See what Kausly<br />could save you.</h2>
+          </div>
+          <p class="section__lede" style="--i:2">Drag the sliders to match your business. We'll estimate your plan — and what you'd stop losing to downtime and overspend.</p>
+        </div>
+
+        <div class="calc" data-reveal>
+          <div class="calc__inputs" style="--i:0">
+            <div class="calc__field">
+              <div class="calc__label">
+                <span>Team size</span>
+                <output id="teamOut" for="teamRange">25 people</output>
+              </div>
+              <input type="range" id="teamRange" min="5" max="200" step="5" value="25" aria-label="Team size" />
+            </div>
+            <div class="calc__field">
+              <div class="calc__label">
+                <span>Current monthly IT spend</span>
+                <output id="spendOut" for="spendRange">$6,000</output>
+              </div>
+              <input type="range" id="spendRange" min="500" max="30000" step="250" value="6000" aria-label="Current monthly IT spend" />
+              <p class="calc__hint">Salaries, contractors, break-fix support, tools.</p>
+            </div>
+            <div class="calc__field">
+              <div class="calc__label">
+                <span>Downtime per month</span>
+                <output id="downOut" for="downRange">8 hours</output>
+              </div>
+              <input type="range" id="downRange" min="0" max="40" step="1" value="8" aria-label="Downtime hours per month" />
+              <p class="calc__hint">Hours your team loses to IT issues.</p>
+            </div>
+          </div>
+
+          <div class="calc__result" style="--i:1">
+            <p class="calc__result-label">Your estimated savings with Kausly</p>
+            <p class="calc__saving"><span id="savingMonthly">$0</span><em>/month</em></p>
+            <p class="calc__annual">That's <strong id="savingAnnual">$0</strong> a year back in the business.</p>
+            <ul class="calc__breakdown">
+              <li><span>Your Kausly plan</span><strong id="planPrice">$1,000/mo</strong></li>
+              <li><span>Overspend recovered</span><strong id="overspend">$0/mo</strong></li>
+              <li><span>Downtime cost avoided</span><strong id="downSaved">$0/mo</strong></li>
+            </ul>
+            <a href="partner.html" class="btn btn--pink btn--block"><span>Partner With Us</span></a>
+            <p class="calc__fine">Illustrative estimate. Downtime valued at $120/hour, 70% preventable. Your exact plan is scoped on a call.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HOW WE WORK ============ -->
+    <section class="section" id="how-we-work">
+      <div class="container">
+        <div class="section__head" data-reveal>
+          <div>
+            <p class="eyebrow" style="--i:0">How we work</p>
             <h2 class="h2" style="--i:1">Proactive by design.<br />Not reactive by default.</h2>
           </div>
         </div>
@@ -187,67 +298,29 @@
           <div class="step" style="--i:0">
             <span class="step__dot" aria-hidden="true"></span>
             <span class="step__num">Step 01</span>
-            <h3>Assess<span class="pink">.</span></h3>
+            <h3>Assess.</h3>
             <p>We audit your infrastructure, security and workflows — and map every risk, gap and quick win before we touch anything.</p>
           </div>
           <div class="step" style="--i:1">
             <span class="step__dot" aria-hidden="true"></span>
             <span class="step__num">Step 02</span>
-            <h3>Stabilise<span class="pink">.</span></h3>
+            <h3>Stabilise.</h3>
             <p>We clear the backlog, patch the vulnerabilities and standardise your environment so the business stands on solid ground.</p>
           </div>
           <div class="step" style="--i:2">
             <span class="step__dot" aria-hidden="true"></span>
             <span class="step__num">Step 03</span>
-            <h3>Run &amp; grow<span class="pink">.</span></h3>
+            <h3>Run &amp; grow.</h3>
             <p>We manage your IT day to day — monitoring, maintaining, advising — so technology scales quietly with the business.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ============ WHY KAUSLY ============ -->
-    <section class="section" id="why-kausly">
-      <div class="container">
-        <div class="section__head" data-reveal>
-          <div>
-            <p class="eyebrow" style="--i:0">Why Kausly<span class="pink">.</span></p>
-            <h2 class="h2" style="--i:1">Enterprise-grade IT,<br />sized for your business.</h2>
-          </div>
-        </div>
-        <div class="grid-cards">
-          <article class="card" data-reveal style="--i:0">
-            <h3>Proactive support</h3>
-            <p>Issues are found and fixed before they reach your team. Fewer tickets, fewer interruptions, fewer surprises.</p>
-          </article>
-          <article class="card" data-reveal style="--i:1">
-            <h3>Reliable infrastructure</h3>
-            <p>Networks, servers and cloud built to enterprise standards — monitored round the clock, maintained on schedule.</p>
-          </article>
-          <article class="card" data-reveal style="--i:2">
-            <h3>Expert consulting</h3>
-            <p>A senior technology partner in the room — helping you plan budgets, choose systems and decide with confidence.</p>
-          </article>
-          <article class="card" data-reveal style="--i:3">
-            <h3>Business continuity</h3>
-            <p>Backup, recovery and redundancy planned in advance — so a bad day never becomes a bad quarter.</p>
-          </article>
-          <article class="card" data-reveal style="--i:4">
-            <h3>Predictable pricing</h3>
-            <p>One flat monthly fee covers your entire IT operation. No hourly billing. No surprise invoices.</p>
-          </article>
-          <article class="card" data-reveal style="--i:5">
-            <h3>A team, not a technician</h3>
-            <p>Engineers, consultants and support specialists — a full department for less than one in-house hire.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
     <!-- ============ QUOTE ============ -->
-    <section class="section section--dark">
+    <section class="section section--deep">
       <div class="container" data-reveal>
-        <p class="quote__mark pink" style="--i:0" aria-hidden="true">“</p>
+        <p class="quote__mark" style="--i:0" aria-hidden="true">“</p>
         <blockquote class="quote" style="--i:1">
           <p>Kausly runs our entire IT operation. We stopped thinking about technology problems — and started thinking about the business again.</p>
           <footer>
@@ -258,92 +331,18 @@
       </div>
     </section>
 
-    <!-- ============ PRICING ============ -->
-    <section class="section" id="pricing">
-      <div class="container pricing">
-        <div class="pricing__copy" data-reveal>
-          <p class="eyebrow" style="--i:0">Pricing<span class="pink">.</span></p>
-          <h2 class="h2" style="--i:1">One flat fee.<br />Zero surprises.</h2>
-          <p class="section__lede" style="--i:2">
-            Your entire IT department for a predictable monthly price — scoped
-            to your team, your systems and your goals. Compare that to the
-            cost of a single in-house hire.
-          </p>
-          <ul class="pricing__points" style="--i:3">
-            <li>Unlimited support for covered users and systems</li>
-            <li>24/7 monitoring and proactive maintenance included</li>
-            <li>Quarterly strategy reviews with a senior consultant</li>
-            <li>Scale up or down as your business changes</li>
-          </ul>
-        </div>
-        <div class="pricing__card" data-reveal style="--i:1">
-          <p class="pricing__label">Managed IT · All-inclusive</p>
-          <p class="pricing__price"><span class="pricing__from">from</span> $1,000<span class="pricing__per">/month</span></p>
-          <ul class="pricing__list">
-            <li>IT procurement &amp; vendor management</li>
-            <li>Maintenance, patching &amp; helpdesk</li>
-            <li>End-to-end IT management</li>
-            <li>Strategic consulting &amp; roadmaps</li>
-            <li>24/7 managed monitoring</li>
-          </ul>
-          <a href="#contact" class="btn btn--pink btn--block">
-            <span>Get a tailored quote</span>
-            <svg class="btn__arrow" width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </a>
-          <p class="pricing__fine">Monthly rolling agreement. No long-term lock-in.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ FAQ ============ -->
-    <section class="section section--tint" id="faq">
-      <div class="container container--narrow">
-        <div class="section__head section__head--center" data-reveal>
-          <div>
-            <p class="eyebrow" style="--i:0">FAQ<span class="pink">.</span></p>
-            <h2 class="h2" style="--i:1">Questions, answered.</h2>
-          </div>
-        </div>
-        <div class="faq" data-reveal>
-          <details class="faq__item" style="--i:0">
-            <summary><span>What does “outsourced IT department” actually mean?</span><span class="faq__icon" aria-hidden="true"></span></summary>
-            <div class="faq__answer"><p>We take full ownership of your technology — procurement, maintenance, management, monitoring and strategy — exactly as an in-house IT team would, for a fraction of the cost. One point of contact for everything IT.</p></div>
-          </details>
-          <details class="faq__item" style="--i:1">
-            <summary><span>What's included in the $1,000/month starting price?</span><span class="faq__icon" aria-hidden="true"></span></summary>
-            <div class="faq__answer"><p>All five services — procurement, maintenance, management, consulting and 24/7 monitoring — scoped to a small team. Your exact fee depends on the users and systems we cover, and it stays flat month to month.</p></div>
-          </details>
-          <details class="faq__item" style="--i:2">
-            <summary><span>We already have some IT in place. How do you take over?</span><span class="faq__icon" aria-hidden="true"></span></summary>
-            <div class="faq__answer"><p>Onboarding starts with a full audit of your environment. We document everything, stabilise what's fragile and transition management without disrupting your team — typically within two to four weeks.</p></div>
-          </details>
-          <details class="faq__item" style="--i:3">
-            <summary><span>How fast do you respond when something breaks?</span><span class="faq__icon" aria-hidden="true"></span></summary>
-            <div class="faq__answer"><p>Our average response time is 15 minutes, and most issues are caught by our monitoring before anyone notices. Critical incidents are worked continuously until resolved.</p></div>
-          </details>
-          <details class="faq__item" style="--i:4">
-            <summary><span>Are we locked into a long contract?</span><span class="faq__icon" aria-hidden="true"></span></summary>
-            <div class="faq__answer"><p>No. We work on a monthly rolling agreement. We'd rather earn your business every month than lock you into a term — and our clients stay because it works.</p></div>
-          </details>
-        </div>
-      </div>
-    </section>
-
     <!-- ============ CTA ============ -->
-    <section class="cta" id="contact">
+    <section class="cta">
       <div class="cta__dots" aria-hidden="true"></div>
       <div class="container" data-reveal>
-        <h2 class="cta__title" style="--i:0">Ready to make IT<br />painless<span>.</span></h2>
+        <h2 class="cta__title" style="--i:0">Ready to make IT<br />painless?</h2>
         <p class="cta__sub" style="--i:1">
-          Book a free consultation. We'll audit your current setup and show you
-          exactly what an outsourced IT department looks like for your business.
+          Partner with Kausly and get a full IT department — procurement,
+          maintenance, management and consulting — for one flat monthly fee.
         </p>
         <div class="cta__actions" style="--i:2">
-          <a href="mailto:hello@kausly.com" class="btn btn--dark">
-            <span>hello@kausly.com</span>
-            <svg class="btn__arrow" width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </a>
-          <a href="tel:+97140000000" class="btn btn--outline-dark"><span>+971 4 000 0000</span></a>
+          <a href="partner.html" class="btn btn--light"><span>Partner With Us</span></a>
+          <a href="rfq.html" class="btn btn--outline-light"><span>Submit an RFQ</span></a>
         </div>
       </div>
     </section>
@@ -358,19 +357,19 @@
         <p class="footer__desc">The outsourced IT department for small and medium businesses in Dubai.</p>
       </div>
       <div class="footer__col">
-        <p class="footer__head">What we do</p>
-        <a href="#what-we-do">IT Procurement</a>
-        <a href="#what-we-do">IT Maintenance</a>
-        <a href="#what-we-do">IT Management</a>
-        <a href="#what-we-do">IT Consulting</a>
-        <a href="#what-we-do">Managed Monitoring</a>
+        <p class="footer__head">Services</p>
+        <a href="service-procurement.html">IT Procurement</a>
+        <a href="service-maintenance.html">IT Maintenance</a>
+        <a href="service-management.html">IT Management</a>
+        <a href="service-consulting.html">IT Consulting</a>
       </div>
       <div class="footer__col">
         <p class="footer__head">Company</p>
-        <a href="#how-we-work">How we work</a>
-        <a href="#why-kausly">Why Kausly</a>
-        <a href="#pricing">Pricing</a>
-        <a href="#faq">FAQ</a>
+        <a href="about.html">About</a>
+        <a href="referral.html">Referral</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="rfq.html">RFQ</a>
+        <a href="partner.html">Partner with us</a>
       </div>
       <div class="footer__col">
         <p class="footer__head">Contact</p>
@@ -384,7 +383,7 @@
       <p>Made in Dubai 🇦🇪</p>
     </div>
     <div class="footer__wordmark" aria-hidden="true">
-      <span data-reveal style="--i:0">kausly<i class="pink">.</i></span>
+      <span data-reveal style="--i:0">kausly<i>.</i></span>
     </div>
   </footer>
 

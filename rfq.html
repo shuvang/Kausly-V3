@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Request a Quote (RFQ) — Kausly</title>
+  <meta name="description" content="Submit a request for quotation to Kausly — tell us what hardware, software or IT service you need and get sourced, negotiated options within 48 hours." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='16' fill='%233E13C4'/><circle cx='16' cy='22' r='5' fill='%23F25AF8'/></svg>" />
+</head>
+<body>
+
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="index.html" class="logo" aria-label="Kausly home">kausly<span class="logo__dot">.</span></a>
+      <nav class="nav__links" id="navLinks" aria-label="Primary">
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="referral.html">Referral</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="rfq.html">RFQ</a>
+        <a href="partner.html" class="mobile-only">Partner with us</a>
+      </nav>
+      <div class="nav__actions">
+        <a href="partner.html" class="btn btn--primary btn--sm"><span>Partner with us</span></a>
+        <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="phero phero--center">
+      <div class="container">
+        <p class="eyebrow reveal-up" style="--d:0">Request for quotation</p>
+        <h1 class="phero__title">
+          <span class="line-mask"><span class="line reveal-line" style="--d:1">Tell us what you need.</span></span>
+          <span class="line-mask"><span class="line reveal-line" style="--d:2">We'll find the best price.</span></span>
+        </h1>
+        <p class="phero__sub reveal-up" style="--d:3">
+          Laptops, servers, software licenses, networking gear or a full project —
+          submit an RFQ and get sourced, negotiated options within 48 hours.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="howstrip" data-reveal>
+          <div class="howstrip__item" style="--i:0">
+            <strong><em>01</em>Submit your RFQ</strong>
+            <p>Describe what you need, the quantity, your budget and your timeline — two minutes, no account needed.</p>
+          </div>
+          <div class="howstrip__item" style="--i:1">
+            <strong><em>02</em>We source &amp; compare</strong>
+            <p>We collect quotes from multiple vetted vendors, benchmark pricing and negotiate on your behalf.</p>
+          </div>
+          <div class="howstrip__item" style="--i:2">
+            <strong><em>03</em>You choose &amp; save</strong>
+            <p>You get a clear comparison with our recommendation — typically 15–30% under list price. No obligation.</p>
+          </div>
+        </div>
+
+        <div class="form-wrap">
+          <div class="form-side" data-reveal>
+            <h2 style="--i:0">Your RFQ.</h2>
+            <p style="--i:1">The more detail you give us, the sharper the quotes come back. Rough requirements are fine too — we'll help you spec it.</p>
+            <ul class="form-side__list" style="--i:2">
+              <li>Multiple vendor quotes on every request</li>
+              <li>Response within 48 business hours</li>
+              <li>No markup on hardware — you see the real prices</li>
+              <li>Free for Kausly clients and non-clients alike</li>
+            </ul>
+          </div>
+
+          <form class="form" data-reveal style="--i:1" data-mailto data-subject="RFQ — Kausly website">
+            <div class="form__row">
+              <div class="field">
+                <label for="rfqCategory">What do you need?</label>
+                <select id="rfqCategory" name="Category" required>
+                  <option value="" selected disabled>Select a category</option>
+                  <option>Laptops &amp; desktops</option>
+                  <option>Servers &amp; storage</option>
+                  <option>Networking equipment</option>
+                  <option>Software &amp; licensing</option>
+                  <option>Cloud services</option>
+                  <option>Printers &amp; peripherals</option>
+                  <option>Full project / office fit-out</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="rfqQty">Quantity</label>
+                <input id="rfqQty" name="Quantity" type="number" min="1" placeholder="e.g. 12" required />
+              </div>
+            </div>
+            <div class="field">
+              <label for="rfqSpecs">Describe the requirement</label>
+              <textarea id="rfqSpecs" name="Requirement" required placeholder="e.g. 12 business laptops for a design team — 16GB RAM minimum, 3-year warranty, delivered to Business Bay…"></textarea>
+            </div>
+            <div class="form__row">
+              <div class="field">
+                <label for="rfqBudget">Target budget <span style="font-weight:500;color:var(--muted)">(optional)</span></label>
+                <select id="rfqBudget" name="Budget">
+                  <option value="" selected disabled>Select a range</option>
+                  <option>Under $5,000</option>
+                  <option>$5,000 – $15,000</option>
+                  <option>$15,000 – $50,000</option>
+                  <option>$50,000+</option>
+                  <option>Not sure yet</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="rfqWhen">When do you need it?</label>
+                <select id="rfqWhen" name="Timeline" required>
+                  <option value="" selected disabled>Select a timeline</option>
+                  <option>ASAP</option>
+                  <option>Within 2 weeks</option>
+                  <option>Within a month</option>
+                  <option>1–3 months</option>
+                  <option>Just budgeting for now</option>
+                </select>
+              </div>
+            </div>
+            <div class="form__row">
+              <div class="field">
+                <label for="rfqCompany">Company</label>
+                <input id="rfqCompany" name="Company" type="text" required autocomplete="organization" />
+              </div>
+              <div class="field">
+                <label for="rfqName">Contact name</label>
+                <input id="rfqName" name="Contact name" type="text" required autocomplete="name" />
+              </div>
+            </div>
+            <div class="form__row">
+              <div class="field">
+                <label for="rfqEmail">Work email</label>
+                <input id="rfqEmail" name="Email" type="email" required autocomplete="email" />
+              </div>
+              <div class="field">
+                <label for="rfqPhone">Phone <span style="font-weight:500;color:var(--muted)">(optional)</span></label>
+                <input id="rfqPhone" name="Phone" type="tel" autocomplete="tel" />
+              </div>
+            </div>
+            <button type="submit" class="btn btn--primary btn--block"><span>Submit RFQ</span></button>
+            <p class="form__success">Thanks! Your email app should open with the RFQ pre-filled — just hit send. Quotes come back within 48 business hours.</p>
+            <p class="form__fine">Submitting opens your email client addressed to hello@kausly.com — nothing is sent until you press send.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="cta__dots" aria-hidden="true"></div>
+      <div class="container" data-reveal>
+        <h2 class="cta__title" style="--i:0">Buying tech every<br />month?</h2>
+        <p class="cta__sub" style="--i:1">Kausly clients get procurement handled continuously — as part of one flat monthly plan.</p>
+        <div class="cta__actions" style="--i:2">
+          <a href="partner.html" class="btn btn--light"><span>Partner With Us</span></a>
+          <a href="service-procurement.html" class="btn btn--outline-light"><span>About procurement</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__col footer__col--brand">
+        <p class="footer__head">Kausly</p>
+        <p class="footer__desc">The outsourced IT department for small and medium businesses in Dubai.</p>
+      </div>
+      <div class="footer__col">
+        <p class="footer__head">Services</p>
+        <a href="service-procurement.html">IT Procurement</a>
+        <a href="service-maintenance.html">IT Maintenance</a>
+        <a href="service-management.html">IT Management</a>
+        <a href="service-consulting.html">IT Consulting</a>
+      </div>
+      <div class="footer__col">
+        <p class="footer__head">Company</p>
+        <a href="about.html">About</a>
+        <a href="referral.html">Referral</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="rfq.html">RFQ</a>
+        <a href="partner.html">Partner with us</a>
+      </div>
+      <div class="footer__col">
+        <p class="footer__head">Contact</p>
+        <a href="mailto:hello@kausly.com">hello@kausly.com</a>
+        <a href="tel:+97140000000">+971 4 000 0000</a>
+        <p class="footer__addr">Business Bay, Dubai,<br />United Arab Emirates</p>
+      </div>
+    </div>
+    <div class="container footer__meta">
+      <p>© 2026 Kausly. All rights reserved.</p>
+      <p>Made in Dubai 🇦🇪</p>
+    </div>
+    <div class="footer__wordmark" aria-hidden="true">
+      <span data-reveal style="--i:0">kausly<i>.</i></span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Referral Program — Kausly</title>
+  <meta name="description" content="Refer a business to Kausly and earn a reward when they become a client — one month of their plan value, paid to you." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='16' fill='%233E13C4'/><circle cx='16' cy='22' r='5' fill='%23F25AF8'/></svg>" />
+</head>
+<body>
+
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="index.html" class="logo" aria-label="Kausly home">kausly<span class="logo__dot">.</span></a>
+      <nav class="nav__links" id="navLinks" aria-label="Primary">
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="referral.html">Referral</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="rfq.html">RFQ</a>
+        <a href="partner.html" class="mobile-only">Partner with us</a>
+      </nav>
+      <div class="nav__actions">
+        <a href="partner.html" class="btn btn--primary btn--sm"><span>Partner with us</span></a>
+        <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="phero phero--center">
+      <div class="container">
+        <p class="eyebrow reveal-up" style="--d:0">Referral program</p>
+        <h1 class="phero__title">
+          <span class="line-mask"><span class="line reveal-line" style="--d:1">Know a business</span></span>
+          <span class="line-mask"><span class="line reveal-line" style="--d:2">drowning in IT problems?</span></span>
+        </h1>
+        <p class="phero__sub reveal-up" style="--d:3">
+          Introduce them to Kausly. When they become a client, you earn a reward
+          worth one month of their plan — starting at $1,000.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="howstrip" data-reveal>
+          <div class="howstrip__item" style="--i:0">
+            <strong><em>01</em>Make the intro</strong>
+            <p>Send us the company's name and contact below — or just connect us over email.</p>
+          </div>
+          <div class="howstrip__item" style="--i:1">
+            <strong><em>02</em>We take it from there</strong>
+            <p>We audit their setup, scope a plan and handle the whole conversation. No selling required from you.</p>
+          </div>
+          <div class="howstrip__item" style="--i:2">
+            <strong><em>03</em>You get rewarded</strong>
+            <p>When they sign and complete their first month, you receive the value of one month of their plan.</p>
+          </div>
+        </div>
+
+        <div class="form-wrap">
+          <div class="form-side" data-reveal>
+            <h2 style="--i:0">Refer a business.</h2>
+            <p style="--i:1">Tell us who we should talk to. We'll keep you posted at every step, and your contact will know the introduction came from you — no cold-call surprises.</p>
+            <ul class="form-side__list" style="--i:2">
+              <li>Reward paid after their first full month</li>
+              <li>No cap — refer as many businesses as you like</li>
+              <li>Existing clients get the reward as account credit</li>
+            </ul>
+          </div>
+
+          <form class="form" data-reveal style="--i:1" data-mailto data-subject="Referral — Kausly website">
+            <div class="form__row">
+              <div class="field">
+                <label for="refName">Your name</label>
+                <input id="refName" name="Your name" type="text" required autocomplete="name" />
+              </div>
+              <div class="field">
+                <label for="refEmail">Your email</label>
+                <input id="refEmail" name="Your email" type="email" required autocomplete="email" />
+              </div>
+            </div>
+            <div class="form__row">
+              <div class="field">
+                <label for="refCompany">Company you're referring</label>
+                <input id="refCompany" name="Referred company" type="text" required />
+              </div>
+              <div class="field">
+                <label for="refContact">Their contact (name / email / phone)</label>
+                <input id="refContact" name="Referred contact" type="text" required />
+              </div>
+            </div>
+            <div class="field">
+              <label for="refNotes">Anything we should know? <span style="font-weight:500;color:var(--muted)">(optional)</span></label>
+              <textarea id="refNotes" name="Notes" placeholder="Their team size, current IT headaches, best time to reach them…"></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--block"><span>Send referral</span></button>
+            <p class="form__success">Thanks! Your email app should open with the referral pre-filled — just hit send. We'll take it from there.</p>
+            <p class="form__fine">Submitting opens your email client addressed to hello@kausly.com — nothing is sent until you press send.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="cta__dots" aria-hidden="true"></div>
+      <div class="container" data-reveal>
+        <h2 class="cta__title" style="--i:0">Prefer to just<br />connect us?</h2>
+        <p class="cta__sub" style="--i:1">Forward this to your contact, or CC us in an email — that counts as a referral too.</p>
+        <div class="cta__actions" style="--i:2">
+          <a href="mailto:hello@kausly.com?subject=Referral" class="btn btn--light"><span>hello@kausly.com</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__col footer__col--brand">
+        <p class="footer__head">Kausly</p>
+        <p class="footer__desc">The outsourced IT department for small and medium businesses in Dubai.</p>
+      </div>
+      <div class="footer__col">
+        <p class="footer__head">Services</p>
+        <a href="service-procurement.html">IT Procurement</a>
+        <a href="service-maintenance.html">IT Maintenance</a>
+        <a href="service-management.html">IT Management</a>
+        <a href="service-consulting.html">IT Consulting</a>
+      </div>
+      <div class="footer__col">
+        <p class="footer__head">Company</p>
+        <a href="about.html">About</a>
+        <a href="referral.html">Referral</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="rfq.html">RFQ</a>
+        <a href="partner.html">Partner with us</a>
+      </div>
+      <div class="footer__col">
+        <p class="footer__head">Contact</p>
+        <a href="mailto:hello@kausly.com">hello@kausly.com</a>
+        <a href="tel:+97140000000">+971 4 000 0000</a>
+        <p class="footer__addr">Business Bay, Dubai,<br />United Arab Emirates</p>
+      </div>
+    </div>
+    <div class="container footer__meta">
+      <p>© 2026 Kausly. All rights reserved.</p>
+      <p>Made in Dubai 🇦🇪</p>
+    </div>
+    <div class="footer__wordmark" aria-hidden="true">
+      <span data-reveal style="--i:0">kausly<i>.</i></span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

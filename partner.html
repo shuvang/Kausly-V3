@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Partner With Us — Kausly</title>
+  <meta name="description" content="Partner with Kausly — tell us about your business and get a free IT audit and a tailored plan within two business days." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='16' fill='%233E13C4'/><circle cx='16' cy='22' r='5' fill='%23F25AF8'/></svg>" />
+</head>
+<body>
+
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="index.html" class="logo" aria-label="Kausly home">kausly<span class="logo__dot">.</span></a>
+      <nav class="nav__links" id="navLinks" aria-label="Primary">
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="referral.html">Referral</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="rfq.html">RFQ</a>
+        <a href="partner.html" class="mobile-only">Partner with us</a>
+      </nav>
+      <div class="nav__actions">
+        <a href="partner.html" class="btn btn--primary btn--sm"><span>Partner with us</span></a>
+        <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="phero phero--center">
+      <div class="container">
+        <p class="eyebrow reveal-up" style="--d:0">Partner with us</p>
+        <h1 class="phero__title">
+          <span class="line-mask"><span class="line reveal-line" style="--d:1">Let's make your IT</span></span>
+          <span class="line-mask"><span class="line reveal-line" style="--d:2">painless.</span></span>
+        </h1>
+        <p class="phero__sub reveal-up" style="--d:3">
+          Tell us a little about your business. We'll come back within two
+          business days with a free audit plan and a tailored quote.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="form-wrap">
+          <div class="form-side" data-reveal>
+            <h2 style="--i:0">What happens next.</h2>
+            <p style="--i:1">No pressure, no obligation — just a clear picture of what an outsourced IT department would look like for your business.</p>
+            <ul class="form-side__list" style="--i:2">
+              <li>A 30-minute intro call, at your convenience</li>
+              <li>A free audit of your current IT setup</li>
+              <li>A tailored plan and flat monthly quote</li>
+              <li>Onboarding in two to four weeks, if you say yes</li>
+            </ul>
+            <p style="--i:3">Prefer to talk first?<br /><a href="tel:+97140000000" style="color:var(--purple);font-weight:700">+971 4 000 0000</a> · <a href="mailto:hello@kausly.com" style="color:var(--purple);font-weight:700">hello@kausly.com</a></p>
+          </div>
+
+          <form class="form" data-reveal style="--i:1" data-mailto data-subject="Partnership enquiry — Kausly website">
+            <div class="form__row">
+              <div class="field">
+                <label for="pName">Your name</label>
+                <input id="pName" name="Name" type="text" required autocomplete="name" />
+              </div>
+              <div class="field">
+                <label for="pCompany">Company</label>
+                <input id="pCompany" name="Company" type="text" required autocomplete="organization" />
+              </div>
+            </div>
+            <div class="form__row">
+              <div class="field">
+                <label for="pEmail">Work email</label>
+                <input id="pEmail" name="Email" type="email" required autocomplete="email" />
+              </div>
+              <div class="field">
+                <label for="pPhone">Phone <span style="font-weight:500;color:var(--muted)">(optional)</span></label>
+                <input id="pPhone" name="Phone" type="tel" autocomplete="tel" />
+              </div>
+            </div>
+            <div class="field">
+              <label for="pSize">Team size</label>
+              <select id="pSize" name="Team size" required>
+                <option value="" selected disabled>Select team size</option>
+                <option>1–10 people</option>
+                <option>11–25 people</option>
+                <option>26–50 people</option>
+                <option>51–100 people</option>
+                <option>100+ people</option>
+              </select>
+            </div>
+            <div class="field">
+              <label>What do you need help with?</label>
+              <div class="checks">
+                <label class="check"><input type="checkbox" name="Needs" value="Procurement" /><span>Procurement</span></label>
+                <label class="check"><input type="checkbox" name="Needs" value="Maintenance" /><span>Maintenance</span></label>
+                <label class="check"><input type="checkbox" name="Needs" value="Management" /><span>Management</span></label>
+                <label class="check"><input type="checkbox" name="Needs" value="Consulting" /><span>Consulting</span></label>
+                <label class="check"><input type="checkbox" name="Needs" value="Everything" /><span>Everything</span></label>
+              </div>
+            </div>
+            <div class="field">
+              <label for="pMessage">Anything else? <span style="font-weight:500;color:var(--muted)">(optional)</span></label>
+              <textarea id="pMessage" name="Message" placeholder="Current setup, biggest headaches, timelines…"></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--block"><span>Send enquiry</span></button>
+            <p class="form__success">Thanks! Your email app should open with your enquiry pre-filled — just hit send. We'll reply within two business days.</p>
+            <p class="form__fine">Submitting opens your email client addressed to hello@kausly.com — nothing is sent until you press send.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div class="container stats__grid" data-reveal>
+        <div class="bigstat" style="--i:0">
+          <span class="bigstat__value"><span data-count="15">0</span><em>min</em></span>
+          <span class="bigstat__label">Average response time</span>
+        </div>
+        <div class="bigstat" style="--i:1">
+          <span class="bigstat__value"><span data-count="99.9" data-decimals="1">0</span><em>%</em></span>
+          <span class="bigstat__label">Infrastructure uptime</span>
+        </div>
+        <div class="bigstat" style="--i:2">
+          <span class="bigstat__value">24<em>/7</em></span>
+          <span class="bigstat__label">Managed monitoring</span>
+        </div>
+        <div class="bigstat" style="--i:3">
+          <span class="bigstat__value"><em>$</em><span data-count="1000" data-group="1">0</span></span>
+          <span class="bigstat__label">Flat monthly fee, from</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__col footer__col--brand">
+        <p class="footer__head">Kausly</p>
+        <p class="footer__desc">The outsourced IT department for small and medium businesses in Dubai.</p>
+      </div>
+      <div class="footer__col">
+        <p class="footer__head">Services</p>
+        <a href="service-procurement.html">IT Procurement</a>
+        <a href="service-maintenance.html">IT Maintenance</a>
+        <a href="service-management.html">IT Management</a>
+        <a href="service-consulting.html">IT Consulting</a>
+      </div>
+      <div class="footer__col">
+        <p class="footer__head">Company</p>
+        <a href="about.html">About</a>
+        <a href="referral.html">Referral</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="rfq.html">RFQ</a>
+        <a href="partner.html">Partner with us</a>
+      </div>
+      <div class="footer__col">
+        <p class="footer__head">Contact</p>
+        <a href="mailto:hello@kausly.com">hello@kausly.com</a>
+        <a href="tel:+97140000000">+971 4 000 0000</a>
+        <p class="footer__addr">Business Bay, Dubai,<br />United Arab Emirates</p>
+      </div>
+    </div>
+    <div class="container footer__meta">
+      <p>© 2026 Kausly. All rights reserved.</p>
+      <p>Made in Dubai 🇦🇪</p>
+    </div>
+    <div class="footer__wordmark" aria-hidden="true">
+      <span data-reveal style="--i:0">kausly<i>.</i></span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
